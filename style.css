@@ -1,0 +1,176 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body {
+    
+    
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    max-width:1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+}
+    
+.header {
+    background-image: url(https://edube.org/uploads/media/default/0001/04/products_image.jpg);
+    height: 150px;
+    width:100% ;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+}
+.name {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(2, 14, 3);
+    border-radius: 4px;
+    padding: 10px;
+}
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(71, 112, 149);
+    justify-content: flex-end;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    right: 3px;
+    
+    
+}
+a {
+    
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+.box-container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-bottom:50px ;
+    gap: 20px
+    
+    
+  
+ 
+   
+    
+}
+
+    
+    
+
+.content-container {
+    width: 100%;
+    
+}
+.box{
+    background-color: aliceblue;
+    border-radius: 4px;
+    border:2px solid ;
+    text-align: center;
+    padding: 20px;
+    min-height: 400px;
+    margin-top: 80px;
+}
+.img,.imgg {
+    width: 100%;
+    max-width: 310px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+    
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.form {
+    width: 100%;
+    margin:50px auto;
+    border: 1px solid;
+    max-width: 400px;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: rgb(228, 220, 220);
+    
+}
+.email,.Name{
+    width: 90%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+ 
+button {
+    margin-top: 10px;
+    background-color: #16e66d;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .box-container {
+        gap: 15px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container{
+        padding: 0 15px;
+    }
+    ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .navigation{
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+@media (max-width:480px) {
+    .box-container {
+        
+        grid-template-columns: 1fr;
+    }
+    .name {
+        font-size: 18px;
+        padding: 8px;
+    }
+    a {
+        padding: 5px 1px;
+        font-size: 14px;
+    }
+}
